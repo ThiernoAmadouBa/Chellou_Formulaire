@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Pré-inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;font-weight: bold; font-style: italic; ">Formulaire de Renseignements pour la Pré-inscription</h1>
+
+    <form action="/submit_form" method="post" >
+        <!-- Informations Personnelles -->
+        <h2>Informations Personnelles</h2>
+
+       
+           <div class="info">
+            <label for="nom">Nom de famille :</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+    
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+            
+    
+             <div class="date">
+                <label for="date_naissance">Date de naissance :</label>
+                <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+        
+                <label for="lieu_naissance">Lieu de naissance :</label>
+                <input type="text" id="lieu_naissance" name="lieu_naissance" required><br><br>
+        
+             </div>
+            <label for="nationalite">Nationalité :</label>
+            <input type="text" id="nationalite" name="nationalite" required><br><br>
+           </div>
+
+        <!-- Coordonnées -->
+        <h2>Coordonnées</h2>
+
+        <div class="cordonne">
+
+            <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required><br><br>
+
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required><br><br>
+
+        <label for="code_postal">Code postal :</label>
+        <input type="text" id="code_postal" name="code_postal" required><br><br>
+
+        <label for="pays">Pays :</label>
+        <input type="text" id="pays" name="pays" required><br><br>
+
+        <label for="telephone">Numéro de téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required><br><br>
+
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required><br><br>
+        </div>
+
+        <!-- Informations Académiques -->
+        <h2>Informations Académiques</h2>
+
+        <div class="academie">
+            <label for="niveau_etudes">Niveau d’études actuel :</label>
+        <input type="text" id="niveau_etudes" name="niveau_etudes"><br><br>
+
+        <label for="dernier_diplome">Dernier diplôme obtenu :</label>
+        <input type="text" id="dernier_diplome" name="dernier_diplome"><br><br>
+
+        <label for="annee_obtention">Année d’obtention :</label>
+        <input type="number" id="annee_obtention" name="annee_obtention"><br><br>
+        </div>
+
+        <!-- Informations Complémentaires -->
+        <h2>Informations Complémentaires</h2>
+          <div class="complement">
+            
+        <label for="motivation">Motivation pour l'inscription :</label><br>
+        <textarea id="motivation" name="motivation" rows="4" cols="50"></textarea><br><br>
+
+        <label for="langues">Langues parlées :</label><br>
+        <input type="text" id="langues" name="langues" placeholder="Langue et niveau (ex. : Français - courant)"><br><br>
+
+          </div>
+        <!-- Documents à Fournir -->
+        <h2>Documents à Fournir</h2>
+
+        <div class="document">
+            <input type="checkbox" id="identite" name="document_identite" style="margin-left: 3px;">
+        <label for="identite">Carte d’identité ou passeport</label><br>
+
+        <input type="checkbox" id="releve_notes" name="document_releve_notes" style="margin-left: 3px;">
+        <label for="releve_notes">Dernier relevé de notes</label><br>
+
+        <input type="checkbox" id="lettre_motivation" name="document_lettre_motivation" style="margin-left: 3px;">
+        <label for="lettre_motivation">Lettre de motivation (si demandé)</label><br>
+
+        <input type="checkbox" id="cv" name="document_cv" style="margin-left: 3px;">
+        <label for="cv">CV (si demandé)</label><br><br>
+        </div>
+
+        <!-- Bouton de soumission -->
+        <button type="submit">Soumettre</button>
+    </form>
+</body>
+</html>
